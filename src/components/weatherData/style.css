@@ -1,0 +1,173 @@
+body {
+    /* text-align: center; */
+    font-size: 150%;
+    background-color: skyblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* background-color: skyblue; */
+    background: url(./blue-sky-with-shiny-clouds-background.jpg);
+    background-size:cover ;
+    background-position:top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+ 
+}
+
+#head{
+    text-align: center;
+    color: aliceblue;
+    background-color: rgba(240, 248, 255 , 0.1) ;
+    font-size: 100px;
+    margin: 0px auto;
+    margin-top: 50px;
+    border-top: 2px solid orange;
+    border-left: 1px solid orange;
+    width: 500px;
+    padding: 25px;
+    border-radius: 150px 0px 150px 0px ;
+    text-shadow: 5px 5px 3px orange;
+    box-shadow: 5px 5px 5px gray;
+}
+
+form{
+    text-align: center;
+    margin-top: 50px ;
+    margin-bottom: 50px ;
+}
+
+input{
+    border: 2px solid skyblue;
+    padding: 20px;
+    border-radius: 30%;
+    background-color: rgb(5, 118, 162);
+    box-shadow: 3px 3px 1px gray;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+    color: orange;
+    text-shadow: 1px 1px 1px black;
+    /* border-top: 0.1px solid grey;
+    border-left: 0.1px solid gray; */
+}
+
+input::placeholder{
+    color: orange;
+    font-weight: bold;
+}
+
+#name {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+
+#countryName {
+    margin-left: 10px;
+}
+/* 
+#details {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+} */
+
+.div {
+     /* margin-left: 350px;
+    margin-right: 350px;  */
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.cHead{
+    margin: 10px 20px 0px 100px ;
+    color: whitesmoke;
+    box-shadow: 2px 2px 5px orange;
+    border-radius: 15px;
+    padding: 15px;
+    width: 175px;
+    text-align: center;
+    text-shadow: 1px 1px 1px gray;
+}
+
+.content{
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px whitesmoke;
+    padding: 15px;
+    width: 175px;
+    text-align: center;
+    color: orange;
+    text-shadow: 1px 1px 1px gray;
+    margin: 10px 100px 0px 20px ;
+}
+
+#weatherReport {
+    /* background-color:rgba(100, 100, 100, 0.05); */
+    background-color: rgba(240, 248, 255, 0.216);
+    /* backdrop-filter: blur(10px); */
+    padding: 30px;
+    width: 40% ;
+    border-radius: 70px;
+    margin: 0px auto;
+    text-align: center;
+    margin-top: 30px;
+    box-shadow: 0px 0px 25px 10px darkgray;
+}
+/* 
+.hidden{
+    visibility: hidden;
+} */
+
+#weatherType>h2 {
+    margin-bottom: 0px;
+    margin-top: 20px ;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 50px ;
+    text-shadow: 5px 5px 5px gray ;
+}
+
+/* 
+#temp{
+    text-align: end;
+
+}
+ */
+#iconDiv {
+    display: flex;
+    justify-content: center;
+}
+
+#wIcon {
+    width: 200%;
+}
+
+#icon {
+    margin: 0px 60px 0px 0px;
+
+}
+
+#temp>h2 {
+    font-size: 80px;
+    margin: 50px 0px 0px 30px;
+    color: orange;
+    text-shadow: 5px 5px 5px grey;
+}
+
+#cityName{
+    color: orange;
+    text-shadow: 2px 2px 2px grey;
+
+}
+
+#countryName{
+    color: whitesmoke;
+    text-shadow: 3px 3px 3px grey;
+}
+
+input:focus{
+    outline: none;
+}
+
+
+
