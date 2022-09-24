@@ -103,12 +103,13 @@ input::placeholder{
 
 #weatherReport {
     /* background-color:rgba(100, 100, 100, 0.05); */
-    background-color: rgba(240, 248, 255, 0.216);
+    background-color: rgba(192, 192, 192, 0.047) ;
     /* backdrop-filter: blur(10px); */
     padding: 30px;
     width: 40% ;
     border-radius: 70px;
     margin: 0px auto;
+    margin-bottom: 70px;
     text-align: center;
     margin-top: 30px;
     box-shadow: 0px 0px 25px 10px darkgray;
