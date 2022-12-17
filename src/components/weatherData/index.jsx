@@ -2,6 +2,8 @@ import React from "react";
 import axios from "axios";
 import { useState } from "react";
 import "./style.css";
+import "./media.css";
+import "./tablet.css";
 
 let Weather = () => {
   const [cityName, setCityName] = useState("");
