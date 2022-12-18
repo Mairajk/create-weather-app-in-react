@@ -10,6 +10,7 @@ let Weather = () => {
   console.log("cityName :", cityName);
 
   const [weatherData, setWeatherData] = useState(null);
+  const [message, setMessage] = useState('');
 
   let takeInput = (e) => {
     setCityName(e.target.value);
@@ -23,11 +24,20 @@ let Weather = () => {
         `https://api.weatherapi.com/v1/current.json?key=1148694ef40c4addba8201236223006&q=${cityName}`
       )
       .then(function (response) {
+        setMessage('');
         setWeatherData(response.data);
         console.log("weatherData : ", weatherData);
       })
       .catch((err) => {
+
+        if (!err.response.data) {
+          setMessage(err.message)
+        } else if (err.response.data) {
+          setMessage(err.response.data.error.message)
+        }
+        console.log('message:=====>', message);
         console.log("error : ", err);
+
       });
   };
   return (
@@ -44,6 +54,11 @@ let Weather = () => {
           onChange={takeInput}
         />
       </form>
+      {
+        (message) ?
+          <p className='message'>{message}</p>
+          : null
+      }
 
       {weatherData === null ? null : (
         <div id="weatherReport" className="hidden">

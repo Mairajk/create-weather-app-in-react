@@ -1,0 +1,6 @@
+[{
+        "relation": ["delegate_permission/common.handle_all_urls"],
+        "target" : { "namespace": "android_app", "package_name": "app.web.react_weather_app_e4a94.twa",
+                     "sha256_cert_fingerprints": ["4F:94:93:3F:B7:84:C9:CE:7F:4D:DF:2A:79:4B:6E:C5:C1:B8:7E:C6:55:4F:7A:73:A1:B6:35:8A:BF:14:50:87"] }
+      }
+]
